@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singleplayer Ping Pong</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div id="root">
+        <div class="score-row" id="score-row" style="display: none;">
+            <div id="score">Score: 0</div>
+            <div id="highscore">High Score: 0</div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div id="game-area">
+                <div id="game" style="display: none; position: relative; width: 600px; height: 600px;"></div>
+       
+                <div id="extralife-indicator"></div>
+            </div>
+            <!-- <div id="powerup-info" style="margin-left: 32px; min-width: 180px; display: none;">
+                <h3>Powerups</h3>
+                <div class="powerup-list">
+                    <div class="powerup-info-row"><img src="icons/score.png" width="32" height="32" alt="Score"> +5 Score: Instantly adds 5 points</div>
+                    <div class="powerup-info-row"><img src="icons/slow.png" width="32" height="32" alt="Slow"> Slow: Slows main ball for 4s</div>
+                    <div class="powerup-info-row"><img src="icons/big_paddle.png" width="32" height="32" alt="Big Paddle"> Big Paddle: Paddle is larger for 4s</div>
+                    <div class="powerup-info-row"><img src="icons/small_ball.png" width="32" height="32" alt="Small Ball"> Small Ball: Main ball shrinks for 4s</div>
+                    <div class="powerup-info-row"><img src="icons/multiplier.png" width="32" height="32" alt="Multiplier"> 2x Score: Paddle hits give double points for 4s</div>
+                    <div class="powerup-info-row"><img src="icons/extra_life.png" width="32" height="32" alt="Extra Life"> Extra Life: Prevents game over once</div>
+                    <div class="powerup-info-row"><img src="icons/reverse.png" width="32" height="32" alt="Reverse"> Reverse: Paddle controls are swapped for 4s</div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div id="pause-menu" style="position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(20,22,24,0.85); z-index:100; justify-content:center; align-items:center;">
+      <div style="background:#222; border-radius:16px; padding:32px 48px; box-shadow:0 0 32px #000a; text-align:center;">
+        <h2 style="color:#fff; margin-bottom:24px;">Game Paused</h2>
+        <button id="pause-continue" style="margin:8px 0; padding:12px 32px;">Continue</button><br>
+        <button id="pause-restart" style="margin:8px 0; padding:12px 32px;">Restart</button><br>
+        <button id="pause-quit" style="margin:8px 0; padding:12px 32px;">Quit</button>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+    <script src="calculateFPS.js" type="module"></script>
+    <script src="singleplayer.js" type="module"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
