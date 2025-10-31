@@ -33,7 +33,7 @@ A real-time multiplayer Pong game that supports up to 4 players with customizabl
 
 1. Clone the repository:
    ```
-   git clone https://gitea.kood.tech/rannellillinurm/web-game
+   git clone https://github.com/NeoScriptV6/web-game
    cd web-game
    ```
 
